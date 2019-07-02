@@ -19,17 +19,20 @@
             tap="onDrawerButtonTap"
             ios.position="left">
         </ActionItem>
-        <Label class="action-bar-title" text="Home"></Label>
+        <Label class="action-bar-title" text="Upcoming Events"></Label>
     </ActionBar>
         <StackLayout height="100%">
-            <StackLayout>
-                <Label class="h1 text-center" text="Next Events"></Label>
-            </StackLayout>
             <ListView height="100%" items="{{ items }}" rowHeight="100" class="list-group" id="listView">
-                    <ListView.itemTemplate>
+                    <ListView.itemTemplate class="m-b-5">
                         <FlexboxLayout class="list-group-item">
-                            <Image src="https://images.math.cnrs.fr/IMG/png/section1-original.png" stretch="none" class="img"></Image>
-                            <Label text="{{ name }}" class="h2 m-l-10"></Label>
+                            <Image src="{{ image }}" stretch="none" class="img" width="auto"></Image>
+                            <StackLayout>
+                                <Label text="{{ name }}" class="h2 m-l-10"></Label>
+                                <FlexboxLayout class="m-l-30">
+                                    <Label text="&#xf041;" class="fa"></Label>
+                                    <Label text="{{ place }}" class="m-l-5"></Label>
+                                </FlexboxLayout>
+                            </StackLayout>
                         </FlexboxLayout>
                     </ListView.itemTemplate>
             </ListView>

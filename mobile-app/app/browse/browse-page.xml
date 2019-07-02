@@ -22,8 +22,20 @@
         <Label class="action-bar-title" text="TOP 10"></Label>
     </ActionBar>
 
-    <GridLayout class="page-content">
-        <Label class="page-icon fa" text="&#xf005;"></Label>
-        <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-    </GridLayout>
+    <StackLayout height="100%">
+            <ListView height="100%" items="{{ items }}" rowHeight="100" class="list-group" id="listView">
+                    <ListView.itemTemplate class="m-b-5">
+                        <FlexboxLayout class="list-group-item">
+                            <Image src="{{ image }}" stretch="none" class="img" width="auto"></Image>
+                            <StackLayout>
+                                <Label text="{{ name }}" class="h2 m-l-10"></Label>
+                                <FlexboxLayout class="m-l-30">
+                                    <Label text="&#xf005;" class="fa"></Label>
+                                    <Label text="{{ place }}" class="m-l-5"></Label>
+                                </FlexboxLayout>
+                            </StackLayout>
+                        </FlexboxLayout>
+                    </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
 </Page>
