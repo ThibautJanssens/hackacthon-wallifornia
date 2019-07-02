@@ -3,18 +3,19 @@
   padding: 0px;
 }
 
-.active{
+.active {
   color: #ED4F37 !important;
 }
 
-a{
+a {
   color: white !important;
 }
 
-a:hover{
-    text-decoration: none !important;
+a:hover {
+  text-decoration: none !important;
 }
-.nav-link{
+
+.nav-link {
   font-size: small;
 }
 
