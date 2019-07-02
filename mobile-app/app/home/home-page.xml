@@ -21,9 +21,17 @@
         </ActionItem>
         <Label class="action-bar-title" text="Home"></Label>
     </ActionBar>
-
-    <GridLayout class="page-content">
-        <Label class="page-icon fa" text="&#xf015;"></Label>
-        <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-    </GridLayout>
+        <StackLayout height="100%">
+            <StackLayout>
+                <Label class="h1 text-center" text="Next Events"></Label>
+            </StackLayout>
+            <ListView height="100%" items="{{ items }}" rowHeight="100" class="list-group" id="listView">
+                    <ListView.itemTemplate>
+                        <FlexboxLayout class="list-group-item">
+                            <Image src="https://images.math.cnrs.fr/IMG/png/section1-original.png" stretch="none" class="img"></Image>
+                            <Label text="{{ name }}" class="h2 m-l-10"></Label>
+                        </FlexboxLayout>
+                    </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
 </Page>
