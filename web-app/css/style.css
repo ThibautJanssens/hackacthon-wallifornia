@@ -3,6 +3,21 @@
   padding: 0px;
 }
 
+.active{
+  color: #ED4F37 !important;
+}
+
+a{
+  color: white !important;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+.nav-link{
+  font-size: small;
+}
+
 /* color: #ED4F37 */
 .img-box {
   height: 36px;

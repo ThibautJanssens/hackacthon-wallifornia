@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <title>Créateurs et éditeurs de musique | SOCAN</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="d-flex flex-row">
+        <div class="logo-box">
+          <img class="nav-logo" src="./assets/socan.png" alt="logo">
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">AUPRES DE QUI LA SOCAN OEUVRE-T-ELLE ?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LES MISSIONS DE LA SOCAN</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">MON COMPTE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EN</a>
+            </li>
+          </ul>
+          <div class="img-box">
+            <img class="nav-loupe" src="./assets/loupe.png" alt="search">
+          </div>
+          <div class="img-box">
+            <img class="nav-burger" src="./assets/burger.png" alt="menu">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="content bg-dark">
+      <div class="content content-header d-flex flex-row  justify-content-between">
+        <div class="">
+          <p>Declare event</p>
+        </div>
+      </div>
+      <div class="content content-body d-flex justify-content-center">
+        <form class="">
+          <div class="d-flex flex-row justify-content-between">
+            <div class="form-group d-flex flex-row">
+              <label class="mr-2" for="">Artist</label>
+              <input class="form-control" placeholder="artist name">
+            </div>
+            <div class="form-group d-flex flex-row">
+              <label class="mr-2" for="">Others</label>
+              <input class="form-control" placeholder="other artists">
+            </div>
+          </div>
+          <div class="d-flex flex-row mt-2 justify-content-between">
+            <div class="form-group d-flex flex-row">
+              <label class="mr-2" for="">Act type</label>
+              <select class="form-control">
+                <option> Headline act </option>
+                <option> Supporting act </option>
+                <option>Co-headline</option>
+              </select>
+            </div>
+            <div class="form-group d-flex flex-row">
+              <label class="mr-2" for="">Number</label>
+              <input class="form-control" placeholder="number of songs">
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between">
+            <div class="form-group d-flex flex-row">
+              <label class="mr-2" for="">Ticket range</label>
+              <select class="form-control">
+                <option> Yes </option>
+                <option> No </option>
+              </select>
+            </div>
+            <div class="form-group d-flex flex-row">
+              <label class="mr-2" for="">Proof type</label>
+              <select class="form-control">
+                <option> Contract </option>
+                <option> Newspaper </option>
+                <option> Ticket stub </option>
+                <option> Program </option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between">
+            <div class="form-group d-flex flex-row">
+              <label class="mr-2" for="">Date</label>
+              <input class="form-control" placeholder="date of performance">
+            </div>
+            <div class="form-group d-flex flex-row">
+              <label class="mr-2" for="">Time</label>
+              <input class="form-control" placeholder="time of performance">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Setlist</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+          <div class="d-flex justify-content-around">
+            <button class="btn btn-danger"><a href="./index.html">Submit</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>
