@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* color: #ED4F37 */
+.img-box {
+  height: 36px;
+  width: 36px;
+  align-items: center;
+  margin-left: 0.5rem;
+  /* to do, center loupe */
+}
+
+.logo-box {
+  height: 36px;
+}
+
+.nav-loupe {
+  height: 71%;
+  width: auto;
+}
+
+.nav-burger {
+  height: 100%;
+  width: auto;
+}
+
+.nav-logo {
+  height: 100%;
+  width: auto;
+}
+
+.img-social {
+  height: 100%;
+  width: auto;
+}
+
+.content {
+  margin-top: 2rem;
+  width: 90%;
+  margin-left: 5%;
+  color: #ED4F37;
+}
+
+.content-header {
+  border-bottom: solid 1px #ED4F37;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-body {
+  padding-bottom: 2rem;
+}
