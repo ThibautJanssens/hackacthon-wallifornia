@@ -24,11 +24,17 @@
 }
 
 .list-group-item{
-
+    flex-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+.action-bar-title{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.list-group{
+    background-color: White;
 }
 
 /* Action bar*/
