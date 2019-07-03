@@ -21,8 +21,16 @@
         <Label class="action-bar-title" text="Artists"></Label>
     </ActionBar>
 
-    <GridLayout class="page-content">
-        <Label class="page-icon fa" text="&#xf001;"></Label>
-        <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-    </GridLayout>
+    <StackLayout height="100%">
+            <ListView height="100%" items="{{ items }}" rowHeight="100" class="list-group" id="listView">
+                    <ListView.itemTemplate class="m-b-5">
+                        <FlexboxLayout class="list-group-item">
+                            <Image src="{{ image }}" stretch="none" class="img" width="auto"></Image>
+                            <StackLayout>
+                                <Label text="{{ name }}" class="h2 m-l-10 m-t-15"></Label>
+                            </StackLayout>
+                        </FlexboxLayout>
+                    </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
 </Page>

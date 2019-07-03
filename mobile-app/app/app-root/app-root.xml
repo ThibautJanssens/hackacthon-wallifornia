@@ -11,7 +11,7 @@ https://docs.nativescript.org/ui/professional-ui-components/SideDrawer/getting-s
     <nsDrawer:RadSideDrawer.drawerContent>
         <GridLayout rows="auto, *" class="sidedrawer sidedrawer-left">
             <StackLayout class="sidedrawer-header">
-                <Image src="~/image/socan.png" stretch="none" class="img-rounded p-t-30"></Image>
+                <Image src="~/images/logo/socan.png" stretch="none" class="img-rounded p-t-30"></Image>
             </StackLayout>
 
             <ScrollView row="1" class="sidedrawer-content">

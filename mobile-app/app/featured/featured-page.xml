@@ -22,8 +22,16 @@
         <Label class="action-bar-title" text="Venues"></Label>
     </ActionBar>
 
-    <GridLayout class="page-content">
-        <Label class="page-icon fa" text="&#xf0f7;"></Label>
-        <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-    </GridLayout>
+    <StackLayout height="100%">
+            <ListView height="100%" items="{{ items }}" rowHeight="100" class="list-group" id="listView">
+                    <ListView.itemTemplate class="m-b-5">
+                        <FlexboxLayout class="list-group-item">
+                            <Image src="{{ image }}" stretch="fill" class="img" width="300px"></Image>
+                            <StackLayout>
+                                <Label text="{{ place }}" class="h3 m-l-10 m-t-15"></Label>
+                            </StackLayout>
+                        </FlexboxLayout>
+                    </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
 </Page>
